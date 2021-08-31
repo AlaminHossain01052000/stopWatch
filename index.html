@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+    body {
+        background-image: url(watch-photo.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #display {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #display h1 {
+        font-size: 40px;
+        display: inline-block;
+        margin-right: 20px;
+        color: #dfe6e9;
+
+    }
+
+    h3 {
+        font-size: 40px;
+        color: #55efc4;
+        margin-bottom: 0px;
+    }
+
+    #button {
+        display: block;
+
+    }
+
+    .m-r-20 {
+        margin-right: 30px;
+    }
+
+    button {
+        padding: 8px 35px;
+        background-color: #d63031;
+        border-radius: 5px;
+        color: #81ecec;
+        border: 0px solid red;
+        font-size: 16px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #e17055;
+    }
+</style>
+
+<body>
+    <div id="display">
+        <h3>STOPWATCH</h3>
+        <h1 id="display-minitue"></h1>
+        <h1 id="display-second">
+
+
+        </h1>
+        <h1 id="display-miliSecond">
+
+
+        </h1>
+        <div id="button">
+            <button class="m-r-20" id="start-button">Start</button>
+            <button class="m-r-20" id="stop-button">Stop</button>
+            <button class="m-r-20" id="reset-button">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
